@@ -33,7 +33,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="{{ route('contacts.index')}}"><img src="images/logo.png" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -46,19 +46,16 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="{{ route('contacts.index')}}">Home</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="{{ route('contacts.index')}}">All Contacts</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="we_do.html">What we do</a>
+                                 <a class="nav-link" href="{{ route('contacts.create')}}">Add New</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="portfolio.html">Portfolio </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="#">Contact Us</a>
                               </li>
                            </ul>
                         </div>
@@ -82,12 +79,12 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-3">
-                     <a class="logo_footer" href="index.html"><img src="images/logo_footer.png" alt="#" /></a>
+                     <a class="logo_footer" href="#"><img src="images/logo_footer.png" alt="#" /></a>
                   </div>
                   <div class="col-md-9">
                      <form class="newslatter_form">
                         <input class="ente" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="subs_btn">Sbscribe Now</button>
+                        <button class="subs_btn">Subscribe Now</button>
                      </form>
                   </div>
                   <div class="col-md-3 col-sm-6"
@@ -95,11 +92,11 @@
                      <div class="Informa helpful">
                         <h3>Useful  Link</h3>
                         <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="we_do.html">What we do</a></li>
-                           <li><a href="portfolio.html">Portfolio</a></li>
-                           <li><a href="contact.html">Contact us</a></li>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="{{ route('contacts.index')}}">About</a></li>
+                           <li><a href="{{ route('contacts.index')}}">What we do</a></li>
+                           <li><a href="{{ route('contacts.index')}}">Portfolio</a></li>
+                           <li><a href="{{ route('contacts.index')}}">Contact us</a></li>
                         </ul>
                      </div>
                   </div>
